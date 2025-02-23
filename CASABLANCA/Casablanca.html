@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style/casablanca_stylesheet.css">
+</head>
+<body>
+    <header id="header">
+        <div class="branding">
+            <a href="Casablanca.html">
+                <img id="logo" src="./images/Casablanca_logo.png" alt="Logo" style = " max-width: 300px; height: auto; width: auto;">
+            </a>
+        </div>
+        <nav class="topnav">
+            <a href="Casablanca.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ready to amplify your social media presence?</h1>
+            <p>Whether you're starting out or seeking that extra boost, we're here to help.</p>
+            <a href="/contact" class="cta-button">Get a Free Consultation</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy; 2023 Casablanca. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    </body>
+</html>
+      
+      <script>
+
+window.onload = function() {
+    document.querySelector('.hero').classList.add('fade-in');
+};
+      function openNav() {
+        document.getElementById("myOffcanvas").style.width = "250px";
+        document.getElementById("mainoffcanvas").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("myOffcanvas").style.width = "0";
+        document.getElementById("mainoffcanvas").style.marginLeft= "0";
+      }
+
+      
+      </script>
+    
+
+
+
+
+
+</body>
+</html>

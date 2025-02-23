@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style/cb_about_stylesheet.css">
+</head>
+<body>
+    <header id="header">
+        <div class="branding">
+            <a href="Casablanca.html">
+                <img id="logo" src="./images/Casablanca_logo.png" alt="Logo" style = " max-width: 300px; height: auto; width: auto;">
+            </a>
+        </div>
+        <nav class="topnav">
+            <a href="Casablanca.html">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p>Hello, I'm Conor, an independent Web Designer 
+                and Graphic Designer, passionate about making delightful-looking 
+                websites that help businesses grow. Whatever you have in mind, 
+                I can make it a reality, whether that's a stunning viral social media campaign,
+                an engaging e-commerce site or impactful brand visuals; I've got you covered.</p>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy; 2023 Casablanca. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    </body>
+</html>
+      
+      <script>
+
+window.onload = function() {
+    document.querySelector('.hero').classList.add('fade-in');
+};
+      function openNav() {
+        document.getElementById("myOffcanvas").style.width = "250px";
+        document.getElementById("mainoffcanvas").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("myOffcanvas").style.width = "0";
+        document.getElementById("mainoffcanvas").style.marginLeft= "0";
+      }
+
+      
+      </script>
+    
+
+
+
+
+
+</body>
+</html>

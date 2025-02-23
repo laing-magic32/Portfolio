@@ -1,0 +1,306 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between; /* Add this to distribute space */
+  align-items: center; /* Vertically align items */
+  padding: 10px 20px; /* Add padding for spacing */
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: silver;
+  font-size: large;
+  font-family: ISOCT;
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+  margin: 0 28px;
+  transition: transform 0.1s ease; /* Add transition for smooth animation */
+}
+
+.topnav a:first-child {
+  margin-left: 0;
+}
+
+.topnav a:hover {
+  color: silver;
+  animation: wiggle 0.5s ease-in-out infinite alternate; /* Apply animation on hover */
+}
+
+.menu-icon::after {
+  visibility: hidden;
+}
+
+.topnav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.topnav a:hover::after {
+  width: 100%;
+  transition: width .8s;
+  background-color: silver;
+}
+
+
+/* Remove the first margin on the first link (optional) */
+.topnav a:first-child {
+  margin-left: 0;
+}
+
+.topnav a:hover {
+  color: silver;
+}
+
+.menu-icon::after {
+  visibility: hidden;
+}
+
+.topnav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.topnav a:hover::after {
+  width: 100%;
+  transition: width .8s;
+  background-color: silver;
+}
+
+/* Add styles for the logo (if needed) */
+#header .branding img#logo {
+  padding-top: 0.3em;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+footer {
+  background-color: #333;
+  color: silver;
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  margin: 0;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+
+.footer-nav {
+  display: inline-block; /* Make the nav inline-block */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: silver;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  padding-right: 10px;
+  margin: 0 15px;
+  display: inline-block; /* Make links inline-block */
+}
+
+.footer-nav a:first-child {
+  margin-left: 0;
+}
+
+.footer-nav a:hover {
+  color: silver;
+}
+
+.footer-nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+  transition: width .8s;
+  background-color: silver;
+}
+
+.hero {
+  background-image: url('./Lara.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center; /* Adjust if needed: e.g., top, bottom, left, right */
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 0; /* Remove padding to fill the whole section */
+  position: relative;
+  height: 100vh; /* Set hero height to viewport height */
+  display: flex; /* use flexbox to center content */
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  align-items: center; /* center horizontally */
+  position: relative; /* Needed for the overlay */
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 1s ease-in-out;
+  
+}
+
+.hero.fade-in {
+  opacity: 1; /* Fade in the image */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) for transparency */
+  z-index: 1; /* Place the overlay behind the text */
+}
+
+.hero-content {
+  max-width: 800px;
+  padding-top: 10em;
+  margin: 0 auto;
+  min-width: 300px; /* Adjust this value as needed */
+  display: flex; /* Add flexbox to center the button */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2; /* Place the text above the overlay */
+}
+.hero h1 {
+  font-size: 2.5em; /* Adjust font size as needed */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.6em; /* Adjust font size as needed */
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: silver;
+  color: black;
+  padding: 20px 40px; /* Increased padding */
+  text-decoration: none;
+  font-size: 1.4em; /* Increased font size */
+  border-radius: 10px; /* Increased border radius */
+  align-self: center;
+  margin-top: 40px; /* Increased top margin */
+  margin-bottom: 40px; /* Increased bottom margin */
+  font-weight: bold; /* Optional: Make the text bolder */
+}
+
+.cta-button:hover {
+  background-color: #ddd;
+}
+
+/* Wiggle Animation */
+@keyframes wiggle {
+  0% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
+}
+
+@media (max-width: 768px) {
+  /* Mobile Styles */
+  #header, footer {
+      flex-direction: column; /* Stack header/footer items vertically */
+      align-items: center; /* Center items */
+      padding: 10px; /* Adjust padding */
+      
+  }
+  .footer {
+    margin-top: auto;
+  }
+  #header .branding img#logo {
+    padding-top: 0em;
+    max-width: 300px;
+    height: auto;
+    width: auto;
+  }
+
+  .topnav, .footer-nav {
+      flex-direction: column; /* Stack navigation links vertically */
+      align-items: center; /* Center links */
+  }
+
+  .topnav {
+    display: flex; /* Make .topnav a flex container */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Take full width */
+    flex-wrap: wrap;
+    
+  }
+
+  .topnav a {
+  
+    padding: 0; /* Adjust link padding */
+    font-size: smaller;
+    
+  }
+
+  .footer-nav a {
+      margin: 3px 0; /* Adjust link margins */
+      padding: 3px; /* Adjust link padding */
+      font-size: smaller;
+  }
+
+  .hero {
+      padding: 10px 10px; /* Adjust hero padding */
+  }
+
+  .hero h1 {
+      font-size: 2em; /* Adjust hero heading size */
+  }
+
+  .hero p {
+      font-size: 1em; /* Adjust hero paragraph size */
+  }
+
+  .cta-button { 
+    margin-bottom: 30px; /* Adjust margin as needed */
+  }
+
+  
+  
+}
